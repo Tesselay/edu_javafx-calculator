@@ -12,37 +12,37 @@
    <TextField fx:id="fieldValue2" layoutX="325.0" layoutY="60.0" prefWidth="200" />
 
    <HBox alignment="CENTER" layoutX="75.0" layoutY="120.0" prefWidth="450.0">
-      <Button fx:id="btnAddition" layoutX="75.0" layoutY="120.0" prefWidth="30" text="+">
+      <Button fx:id="btnAddition" layoutX="75.0" layoutY="120.0" onAction="#btnAdditionOnAction" prefWidth="30" text="+">
          <HBox.margin>
             <Insets left="20.0" right="20.0" />
          </HBox.margin>
       </Button>
-      <Button fx:id="btnSubtraction" layoutX="135.0" layoutY="120.0" prefWidth="30" text="-">
+      <Button fx:id="btnSubtraction" layoutX="135.0" layoutY="120.0" onAction="#btnSubtractionOnAction" prefWidth="30" text="-">
          <HBox.margin>
             <Insets left="15.0" right="15.0" />
          </HBox.margin>
       </Button>
-      <Button fx:id="btnMultiplication" layoutX="195.0" layoutY="120.0" prefWidth="30" text="*">
+      <Button fx:id="btnMultiplication" layoutX="195.0" layoutY="120.0" onAction="#btnMultiplicationOnAction" prefWidth="30" text="*">
          <HBox.margin>
             <Insets left="15.0" right="15.0" />
          </HBox.margin>
       </Button>
-      <Button fx:id="btnDivision" layoutX="255.0" layoutY="120.0" prefWidth="30" text="/">
+      <Button fx:id="btnDivision" layoutX="255.0" layoutY="120.0" onAction="#btnDivisionOnAction" prefWidth="30" text="/">
          <HBox.margin>
             <Insets left="15.0" right="15.0" />
          </HBox.margin>
       </Button>
-      <Button fx:id="btnPower" layoutX="315.0" layoutY="120.0" prefWidth="30" text="-">
+      <Button fx:id="btnPower" layoutX="315.0" layoutY="120.0" onAction="#btnPowerOnAction" prefWidth="30" text="-">
          <HBox.margin>
             <Insets left="15.0" right="15.0" />
          </HBox.margin>
       </Button>
-      <Button fx:id="btnModulo" layoutX="375.0" layoutY="120.0" prefWidth="30" text="*">
+      <Button fx:id="btnModulo" layoutX="375.0" layoutY="120.0" onAction="#btnModuloOnAction" prefWidth="30" text="*">
          <HBox.margin>
             <Insets left="15.0" right="15.0" />
          </HBox.margin>
       </Button>
-      <Button fx:id="btnModuloInverse" layoutX="435.0" layoutY="120.0" prefWidth="30" text="/">
+      <Button fx:id="btnModuloInverse" layoutX="435.0" layoutY="120.0" onAction="#btnModuloInverseOnAction" prefWidth="30" text="/">
          <HBox.margin>
             <Insets left="15.0" right="15.0" />
          </HBox.margin>
@@ -58,5 +58,5 @@
          <Font size="20.0" />
       </font></TextField>
 
-   <Button fx:id="btnReset" layoutX="240.0" layoutY="325.0" prefWidth="120" text="Reset" />
+   <Button fx:id="btnReset" layoutX="240.0" layoutY="325.0" onAction="#btnResetOnAction" prefWidth="120" text="Reset" />
 </AnchorPane>
