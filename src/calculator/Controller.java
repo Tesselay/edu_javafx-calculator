@@ -24,8 +24,18 @@ public class Controller {
 
     private void updateValues() {
         // For more efficiency, the values are only updated once one of the operand buttons is pressed.
-        value1 = Double.parseDouble(fieldValue1.getText());
-        value2 = Double.parseDouble(fieldValue2.getText());
+        try {
+            value1 = Double.parseDouble(fieldValue1.getText());
+            value2 = Double.parseDouble(fieldValue2.getText());
+        } catch (NumberFormatException e) {
+            resetFields();
+        }
+    }
+
+    private void resetFields() {
+        fieldValue1.setText("");
+        fieldValue2.setText("");
+        fieldResult.setText("");
     }
 
     public void btnAdditionOnAction(ActionEvent actionEvent) {
@@ -77,8 +87,6 @@ public class Controller {
     }
 
     public void btnResetOnAction(ActionEvent actionEvent) {
-        fieldValue1.setText("");
-        fieldValue2.setText("");
-        fieldResult.setText("");
+        resetFields();
     }
 }
