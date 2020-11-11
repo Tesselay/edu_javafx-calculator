@@ -32,17 +32,17 @@
             <Insets left="15.0" right="15.0" />
          </HBox.margin>
       </Button>
-      <Button fx:id="btnPower" layoutX="315.0" layoutY="120.0" onAction="#btnPowerOnAction" prefWidth="30" text="-">
+      <Button fx:id="btnPower" layoutX="315.0" layoutY="120.0" onAction="#btnPowerOnAction" prefWidth="30" text="**">
          <HBox.margin>
             <Insets left="15.0" right="15.0" />
          </HBox.margin>
       </Button>
-      <Button fx:id="btnModulo" layoutX="375.0" layoutY="120.0" onAction="#btnModuloOnAction" prefWidth="30" text="*">
+      <Button fx:id="btnModulo" layoutX="375.0" layoutY="120.0" onAction="#btnModuloOnAction" prefWidth="30" text="%">
          <HBox.margin>
             <Insets left="15.0" right="15.0" />
          </HBox.margin>
       </Button>
-      <Button fx:id="btnModuloInverse" layoutX="435.0" layoutY="120.0" onAction="#btnModuloInverseOnAction" prefWidth="30" text="/">
+      <Button fx:id="btnModuloInverse" layoutX="435.0" layoutY="120.0" onAction="#btnModuloInverseOnAction" prefWidth="30" text="//">
          <HBox.margin>
             <Insets left="15.0" right="15.0" />
          </HBox.margin>
