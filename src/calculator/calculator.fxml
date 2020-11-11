@@ -37,7 +37,8 @@
             <Insets left="15.0" right="15.0" />
          </HBox.margin>
       </Button>
-      <Button fx:id="btnModulo" layoutX="375.0" layoutY="120.0" onAction="#btnModuloOnAction" prefWidth="30" text="%">
+      <!-- '%' needs to be prepended with an escape character, since '%' in fxml is a designated key -->
+      <Button fx:id="btnModulo" layoutX="375.0" layoutY="120.0" onAction="#btnModuloOnAction" prefWidth="30" text="\%">
          <HBox.margin>
             <Insets left="15.0" right="15.0" />
          </HBox.margin>
