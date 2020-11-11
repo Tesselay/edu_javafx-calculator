@@ -16,7 +16,7 @@ public class Controller {
     @FXML public Button btnDivision;
     @FXML public Button btnPower;
     @FXML public Button btnModulo;
-    @FXML public Button btnModuloInverse;
+    @FXML public Button btnFloorDivision;
     @FXML public Button btnReset;
 
     private int value1;
@@ -69,7 +69,7 @@ public class Controller {
         fieldResult.setText(String.valueOf(result));
     }
 
-    public void btnModuloInverseOnAction(ActionEvent actionEvent) {
+    public void btnFloorDivisionOnAction(ActionEvent actionEvent) {
         updateValues();
         int result = value1 + value2;
         fieldResult.setText(String.valueOf(result));
