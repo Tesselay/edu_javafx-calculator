@@ -18,7 +18,17 @@ public class Controller {
     @FXML public Button btnModulo;
     @FXML public Button btnModuloInverse;
 
+    private int value1;
+    private int value2;
+
+    private void updateValues() {
+        value1 = Integer.parseInt(fieldValue1.getText());
+        value2 = Integer.parseInt(fieldValue2.getText());
+    }
+
     public void btnAdditionOnAction(ActionEvent actionEvent) {
+
+
     }
 
 
