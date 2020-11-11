@@ -22,6 +22,7 @@ public class Controller {
     @FXML public Button btnModulo;
     @FXML public Button btnFloorDivision;
     @FXML public Button btnReset;
+    @FXML public Button btnGreatestCommonDivisor;
 
     private double value1;
     private double value2;
@@ -127,5 +128,21 @@ public class Controller {
     public void btnResetOnAction(ActionEvent actionEvent) {
         resetFields();
         activateButtons();
+    }
+
+    public void btnGreatestCommonDivisorOnAction(ActionEvent actionEvent) {
+        deactivateButtons(((Node) actionEvent.getSource()).getId());
+        updateValues();
+
+        double result;
+        while (true) {
+            if (value1 % value2 == 0) {
+                result = value2;
+                break;
+            }
+            value2 = value1 % value2;
+        }
+
+        fieldResult.setText(String.valueOf(result));
     }
 }

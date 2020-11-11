@@ -14,38 +14,43 @@
    <HBox alignment="CENTER" layoutX="75.0" layoutY="120.0" prefWidth="450.0">
       <Button fx:id="btnAddition" layoutX="75.0" layoutY="120.0" onAction="#btnAdditionOnAction" prefWidth="30" text="+">
          <HBox.margin>
-            <Insets left="20.0" right="20.0" />
+            <Insets left="10.0" right="10.0" />
          </HBox.margin>
       </Button>
       <Button fx:id="btnSubtraction" layoutX="135.0" layoutY="120.0" onAction="#btnSubtractionOnAction" prefWidth="30" text="-">
          <HBox.margin>
-            <Insets left="15.0" right="15.0" />
+            <Insets left="10.0" right="10.0" />
          </HBox.margin>
       </Button>
       <Button fx:id="btnMultiplication" layoutX="195.0" layoutY="120.0" onAction="#btnMultiplicationOnAction" prefWidth="30" text="*">
          <HBox.margin>
-            <Insets left="15.0" right="15.0" />
+            <Insets left="10.0" right="10.0" />
          </HBox.margin>
       </Button>
       <Button fx:id="btnDivision" layoutX="255.0" layoutY="120.0" onAction="#btnDivisionOnAction" prefWidth="30" text="/">
          <HBox.margin>
-            <Insets left="15.0" right="15.0" />
+            <Insets left="10.0" right="10.0" />
          </HBox.margin>
       </Button>
       <Button fx:id="btnPower" layoutX="315.0" layoutY="120.0" onAction="#btnPowerOnAction" prefWidth="30" text="**">
          <HBox.margin>
-            <Insets left="15.0" right="15.0" />
+            <Insets left="10.0" right="10.0" />
          </HBox.margin>
       </Button>
       <!-- '%' needs to be prepended with an escape character, since '%' in fxml is a designated key -->
       <Button fx:id="btnModulo" layoutX="375.0" layoutY="120.0" onAction="#btnModuloOnAction" prefWidth="30" text="\%">
          <HBox.margin>
-            <Insets left="15.0" right="15.0" />
+            <Insets left="10.0" right="10.0" />
          </HBox.margin>
       </Button>
       <Button fx:id="btnFloorDivision" layoutX="435.0" layoutY="120.0" onAction="#btnFloorDivisionOnAction" prefWidth="30" text="//">
          <HBox.margin>
-            <Insets left="15.0" right="15.0" />
+            <Insets left="10.0" right="10.0" />
+         </HBox.margin>
+      </Button>
+      <Button fx:id="btnGreatestCommonDivisor" layoutX="435.0" layoutY="120.0" onAction="#btnGreatestCommonDivisorOnAction" prefWidth="40" text="gcd">
+         <HBox.margin>
+            <Insets left="10.0" right="10.0" />
          </HBox.margin>
       </Button>
    </HBox>
