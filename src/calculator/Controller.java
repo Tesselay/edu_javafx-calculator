@@ -71,7 +71,8 @@ public class Controller {
 
     public void btnFloorDivisionOnAction(ActionEvent actionEvent) {
         updateValues();
-        double result = value1 + value2;
+        // A simple typecast suffices for flooring, since the fractional digits will just be cut off.
+        int result = (int) (value1 / value2);
         fieldResult.setText(String.valueOf(result));
     }
 
