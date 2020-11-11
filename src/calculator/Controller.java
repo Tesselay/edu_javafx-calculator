@@ -17,6 +17,7 @@ public class Controller {
     @FXML public Button btnPower;
     @FXML public Button btnModulo;
     @FXML public Button btnModuloInverse;
+    @FXML public Button btnReset;
 
     private int value1;
     private int value2;
