@@ -57,7 +57,7 @@ public class Controller {
         updateValues();
 
         int result = value1;
-        for (int i = 0; i <= value2; i++) {
+        for (int i = 0; i < value2 - 1; i++) {
             result *= value1;
         }
         fieldResult.setText(String.valueOf(result));
